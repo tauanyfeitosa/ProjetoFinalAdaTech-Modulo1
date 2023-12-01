@@ -3,6 +3,7 @@ namespace ProjetoFinalAdaTech.JogoDaForca
 {
     internal class InteracaoUsuario
     {
+        #region Método Principal
         internal static void MetodoPrincipal(string categoriaSorteada, string palavraSorteada)
         {
             try
@@ -64,7 +65,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 // Aqui você pode adicionar mais tratamento ou log, se necessário.
             }
         }
+        #endregion
 
+        #region Método para verificar a possibilidade de ler a entrada do usuário
         private static bool LerEntradaDoUsuario(char[] palavraEscondida)
         {
             try
@@ -78,6 +81,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
+
+        #region Método para fazer a apresentação do sistema ao usuário
 
         private static void ApresentarMensagemSaudacao()
         {
@@ -95,6 +101,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
+
+        #region Método para fazer a apresentação da dica/categoria
 
         private static void ApresentarCategoria(string categoria, string palavraSorteada)
         {
@@ -109,6 +118,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
+
+        #region Método para inicializar a palavra
 
         private static char[] InicializarPalavraEscondida(string palavraSorteada)
         {
@@ -123,7 +135,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
 
+        #region Método para dar uma pausa no tempo de execução
         private static void Aguardar(int milissegundos)
         {
             try
@@ -136,6 +150,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
+
+        #region Método para alterar array
 
         private static char[] AlterarArray(char[] palavra, string palavraSorteada)
         {
@@ -153,7 +170,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
 
+        #region Método para ler entrada char
         private static char LerLetraDoUsuario()
         {
             try
@@ -166,6 +185,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
+
+        #region Método para ler a plavra completa
 
         private static string LerPalavraDoUsuario()
         {
@@ -179,7 +201,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
 
+        #region Método verificar a letra na palavra
         private static bool PalavraSorteadaContemLetra(string palavraSorteada, char letra)
         {
             try
@@ -192,7 +216,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
 
+        #region Método para verificar se a palavra base já contém a letra
         private static bool PalavraEscondidaContemLetra(char[] palavra, char letra)
         {
             try
@@ -205,7 +231,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
 
+        #region Método para atualizar palavra escondida
         private static void AtualizarPalavraEscondida(string palavraSorteada, char letra, char[] palavra)
         {
             try
@@ -219,7 +247,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
 
+        #region Método para verificar a posição da letra
         private static List<int> PosicoesLetra(string palavraSorteada, char letra)
         {
             try
@@ -235,6 +265,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
+
+        #region Método para substituir a letra na posição correta
 
         private static void SubstituirLetra(List<int> posicoes, char letra, char[] palavra)
         {
@@ -249,6 +282,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
+
+        #region Método para verificar erros
 
         private static bool VerificarErros(int contadorErros, string palavraSorteada)
         {
@@ -268,6 +304,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
+
+        #region Método para verificar vencedor
 
         private static bool VerificarVencedor(char[] palavra)
         {
@@ -281,7 +320,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
 
+        #region Método para checar se a palavra inserida é a correta
         private static bool VerificarPalavra(string palavra, string palavraUsuario)
         {
             try
@@ -294,6 +335,7 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 Console.WriteLine($"Ocorreu uma exceção ao verificar a palavra completa: {ex.Message}");
                 throw;
             }
-        }
+        } 
+        #endregion
     }
 }
