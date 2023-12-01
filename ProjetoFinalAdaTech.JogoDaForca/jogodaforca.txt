@@ -1,0 +1,817 @@
+﻿frutas,maca
+frutas,banana
+frutas,morango
+frutas,abacaxi
+frutas,uva
+frutas,pera
+frutas,manga
+frutas,pessego
+frutas,melancia
+frutas,kiwi
+frutas,mamao
+frutas,laranja
+frutas,goiaba
+frutas,limao
+frutas,abacate
+frutas,cereja
+frutas,figo
+frutas,amora
+frutas,framboesa
+frutas,mirtilo
+frutas,abiu
+frutas,acerola
+frutas,caju
+frutas,carambola
+frutas,caqui
+frutas,guarana
+frutas,jaca
+frutas,jambo
+frutas,maracuja
+frutas,pequi
+frutas,pitanga
+frutas,nectarina
+frutas,pinheiro
+frutas,coco
+frutas,goiaba
+frutas,pinhao
+frutas,marolo
+frutas,abrico
+frutas,sapoti
+frutas,tamarindo
+frutas,pupunha
+frutas,cupuacu
+frutas,graviola
+frutas,siriguela
+frutas,tangerina
+frutas,umbu
+frutas,cacau
+profissões,medico
+profissões,professor
+profissões,engenheiro
+profissões,advogado
+profissões,cientista
+profissões,escritor
+profissões,chef
+profissões,musico
+profissões,ator
+profissões,artista
+profissões,policial
+profissões,bombeiro
+profissões,programador
+profissões,designer
+profissões,jornalista
+profissões,agricultor
+profissões,carpinteiro
+profissões,motorista
+profissões,enfermeiro
+profissões,arquiteto
+profissões,economista
+profissões,psicologo
+profissões,terapeuta
+profissões,piloto
+profissões,dentista
+profissões,veterinario
+profissões,contador
+profissões,analista
+profissões,consultor
+profissões,tecnico
+profissões,cirurgiao
+profissões,fotografo
+profissões,pintor
+profissões,escultor
+profissões,marceneiro
+profissões,soldador
+profissões,pedreiro
+profissões,agente penitenciario
+profissões,psiquiatra
+profissões,analista de sistemas
+profissões,biologo
+profissões,geologo
+profissões,sociologo
+profissões,antropologo
+profissões,filosofo
+profissões,matematico
+profissões,estatistico
+profissões,fisico
+profissões,quimico
+profissões,odontologo
+profissões,enfermeira
+profissões,cientista politico
+profissões,marinheiro
+profissões,arqueologo
+profissões,diretor de cinema
+profissões,escritor
+profissões,editor
+profissões,coreografo
+profissões,camareiro
+profissões,maquiador
+profissões,estilista
+profissões,piloto de aviao
+profissões,piloto de helicoptero
+profissões,locutor
+profissões,comissario de bordo
+profissões,operador de maquinas
+profissões,engenheiro civil
+profissões,engenheiro eletrico
+profissões,engenheiro mecanico
+profissões,engenheiro quimico
+profissões,engenheiro de software
+profissões,engenheiro ambiental
+profissões,engenheiro aeroespacial
+profissões,engenheiro agronomo
+profissões,engenheiro de producao
+profissões,engenheiro eletronico
+profissões,engenheiro de petroleo
+profissões,engenheiro de minas
+profissões,engenheiro de controle e automacao
+profissões,engenheiro de biomedicina
+profissões,engenheiro de materiais
+profissões,engenheiro de alimentos
+profissões,engenheiro de telecomunicacoes
+profissões,engenheiro florestal
+profissões,engenheiro naval
+adjetivos,feliz
+adjetivos,triste
+adjetivos,inteligente
+adjetivos,engracado
+adjetivos,generoso
+adjetivos,corajoso
+adjetivos,gentil
+adjetivos,curioso
+adjetivos,otimista
+adjetivos,pessimista
+adjetivos,paciente
+adjetivos,impaciente
+adjetivos,amigavel
+adjetivos,timido
+adjetivos,extrovertido
+adjetivos,criativo
+adjetivos,organizado
+adjetivos,bagunceiro
+adjetivos,talentoso
+adjetivos,preguicoso
+adjetivos,honesto
+adjetivos,determinado
+adjetivos,carinhoso
+adjetivos,sincero
+adjetivos,humilde
+adjetivos,vaidoso
+adjetivos,ousado
+adjetivos,modesto
+adjetivos,ousado
+adjetivos,modesto
+adjetivos,independente
+adjetivos,conformado
+adjetivos,alegre
+adjetivos,desanimado
+adjetivos,energico
+adjetivos,relaxado
+adjetivos,preocupado
+adjetivos,sociavel
+adjetivos,solitario
+adjetivos,gracioso
+adjetivos,sensato
+adjetivos,teimoso
+adjetivos,apaixonado
+adjetivos,entusiasta
+adjetivos,tranquilo
+adjetivos,temeroso
+adjetivos,ousado
+adjetivos,reflexivo
+adjetivos,compreensivo
+adjetivos,reservado
+adjetivos,comunicativo
+adjetivos,perspicaz
+adjetivos,pontual
+adjetivos,meticuloso
+adjetivos,resiliente
+adjetivos,solidario
+adjetivos,engenhoso
+adjetivos,sagaz
+adjetivos,despreocupado
+adjetivos,habilidoso
+adjetivos,perseverante
+adjetivos,audacioso
+adjetivos,cuidadoso
+adjetivos,inovador
+adjetivos,prestativo
+adjetivos,sereno
+adjetivos,dinamico
+adjetivos,indulgente
+adjetivos,justo
+adjetivos,grato
+adjetivos,compreensivo
+adjetivos,comprometido
+adjetivos,observador
+adjetivos,agradecido
+adjetivos,altruista
+adjetivos,apreciativo
+adjetivos,articulado
+adjetivos,assertivo
+adjetivos,atencioso
+adjetivos,capaz
+adjetivos,coerente
+adjetivos,confiavel
+adjetivos,diplomatico
+adjetivos,eficiente
+adjetivos,eficaz
+adjetivos,equilibrado
+adjetivos,experiente
+adjetivos,firme
+adjetivos,harmonioso
+adjetivos,imparcial
+adjetivos,justo
+adjetivos,logico
+adjetivos,perseverante
+adjetivos,resiliente
+adjetivos,responsavel
+adjetivos,sabio
+adjetivos,sensato
+adjetivos,tolerante
+adjetivos,versatil
+adjetivos,vibrante
+países,brasil
+países,estados unidos
+países,franca
+países,alemanha
+países,japao
+países,china
+países,russia
+países,india
+países,canada
+países,australia
+países,mexico
+países,italia
+países,espanha
+países,argentina
+países,africa do sul
+países,suecia
+países,noruega
+países,nova zelandia
+países,coreia do sul
+países,portugal
+países,reino unido
+países,suica
+países,holanda
+países,belgica
+países,finlandia
+países,dinamarca
+países,noruega
+países,islandia
+países,ira
+países,iraque
+países,afeganistao
+países,paquistao
+países,bangladesh
+países,sri lanka
+países,nepal
+países,butao
+países,maldivas
+países,tailandia
+países,malasia
+países,singapura
+países,indonesia
+países,fiji
+países,papua nova guine
+países,timor leste
+países,camboja
+países,filipinas
+países,vietna
+países,laos
+cidades brasileiras,porto alegre
+cidades brasileiras,florianopolis
+cidades brasileiras,curitiba
+cidades brasileiras,campo grande
+cidades brasileiras,cuiaba
+cidades brasileiras,goiana
+cidades brasileiras,são paulo
+cidades brasileiras,rio de janeiro
+cidades brasileiras,vitoria
+cidades brasileiras,belo horizonte
+cidades brasileiras,salvador
+cidades brasileiras,aracaju
+cidades brasileiras,maceió
+cidades brasileiras,recife
+cidades brasileiras,joao pessoa
+cidades brasileiras,natal
+cidades brasileiras,teresina
+cidades brasileiras,fortaleza
+cidades brasileiras,sao luiz
+cidades brasileiras,manaus
+cidades brasileiras,belem
+cidades brasileiras,macapa
+cidades brasileiras,boa vista
+cidades brasileiras,rio branco
+cidades brasileiras,porto velho
+cidades brasileiras,palmas
+cidades brasileiras,fortaleza
+cidades brasileiras,aracati
+cidades brasileiras,jijoca de jericoacoara
+cidades brasileiras,mossoro
+cidades brasileiras,sobral
+cidades brasileiras,crato
+cidades brasileiras,juazeiro do norte
+cidades brasileiras,teresina
+cidades brasileiras,parnaiba
+cidades brasileiras,piauí
+cidades brasileiras,sao luis
+cidades brasileiras,imperatriz
+cidades brasileiras,caxias
+cidades brasileiras,manaus
+cidades brasileiras,manacapuru
+cidades brasileiras,parintins
+cidades brasileiras,itacoatiara
+cidades brasileiras,tapauá
+cidades brasileiras,santarem
+cidades brasileiras,altamira
+cidades brasileiras,maraba
+cidades brasileiras,parauapebas
+cidades brasileiras,abidos
+cidades brasileiras,macapa
+cidades brasileiras,santana
+cidades brasileiras,laranjal do jari
+cidades brasileiras,boa vista
+cidades brasileiras,rorainopolis
+cidades brasileiras,alvorada do norte
+cidades brasileiras,porto alegre do norte
+cidades brasileiras,anapolis
+cidades brasileiras,goiania
+cidades brasileiras,aparecida de goiania
+cidades brasileiras,anapolis
+cidades brasileiras,goiania
+cidades brasileiras,aparecida de goiania
+cidades brasileiras,goias
+cidades brasileiras,catalao
+cidades brasileiras,jatai
+cidades brasileiras,rio verde
+cidades brasileiras,itumbiara
+cidades brasileiras,formosa
+cidades brasileiras,luziania
+cidades brasileiras,entorno
+artistas,leonardo da vinci
+artistas,frida kahlo
+artistas,vincent van gogh
+artistas,pablo picasso
+artistas,michael jackson
+artistas,beyonce
+artistas,david bowie
+artistas,quentin tarantino
+artistas,steven spielberg
+artistas,lady gaga
+artistas,ed sheeran
+artistas,adele
+artistas,leonardo dicaprio
+artistas,scarlett johansson
+artistas,tom hanks
+artistas,angelina jolie
+artistas,cate blanchett
+artistas,cristiano ronaldo
+artistas,lionel messi
+artistas,william shakespeare
+artistas,jane austen
+artistas,charles dickens
+artistas,leo tolstoy
+artistas,george orwell
+artistas,jorge luis borges
+artistas,gabriel garcia marquez
+artistas,marcel proust
+artistas,emily bronte
+artistas,mark twain
+artistas,edgar allan poe
+artistas,fyodor dostoevsky
+artistas,virginia woolf
+artistas,gustave flaubert
+artistas,anton chekhov
+artistas,james joyce
+artistas,guimaraes rosa
+artistas,clarice lispector
+artistas,machado de assis
+artistas,castro alves
+artistas,camoes
+artistas,gil vicente
+artistas,graciliano ramos
+artistas,eça de queiros
+artistas,jose saramago
+artistas,luis de camoes
+comidas,pizza
+comidas,sushi
+comidas,churrasco
+comidas,lasanha
+comidas,feijoada
+comidas,hamburguer
+comidas,salada
+comidas,sorvete
+comidas,chocolate
+comidas,macarrao
+comidas,arroz
+comidas,pao
+comidas,frango
+comidas,peixe
+comidas,sopa
+comidas,batata frita
+comidas,sanduiche
+comidas,camarao
+comidas,carne de porco
+comidas,ensopado
+comidas,tacos
+comidas,paella
+comidas,ramen
+comidas,kebab
+comidas,guacamole
+comidas,cuscuz
+comidas,acaraje
+comidas,pamonha
+comidas,baiao de dois
+comidas,coxinha
+comidas,kibe
+comidas,pastel
+comidas,empada
+comidas,acaraje
+comidas,brigadeiro
+comidas,beijinho
+comidas,quindim
+comidas,caipirinha
+comidas,moqueca
+comidas,acaraje
+comidas,pão de queijo
+comidas,coxinha
+comidas,kibe
+comidas,pastel
+comidas,empada
+comidas,brigadeiro
+comidas,beijinho
+comidas,quindim
+comidas,caipirinha
+comidas,moqueca
+comidas,caldo verde
+comidas,pate
+comidas,fondue
+comidas,tapioca
+comidas,vatapa
+comidas,croissant
+comidas,souffle
+comidas,merengue
+comidas,cozido
+comidas,bacalhau
+comidas,picanha
+comidas,pastel de nata
+comidas,aligot
+comidas,couscous
+comidas,gnocchi
+comidas,pavlova
+comidas,salmao gravlax
+objetos,celular
+objetos,computador
+objetos,livro
+objetos,oculos
+objetos,relogio
+objetos,caneta
+objetos,cadeira
+objetos,mesa
+objetos,carro
+objetos,bicicleta
+objetos,camera
+objetos,chave
+objetos,bolsa
+objetos,sapato
+objetos,sofa
+objetos,escova de dentes
+objetos,copo
+objetos,garfo
+objetos,faca
+objetos,colher
+objetos,televisao
+objetos,laptop
+objetos,mochila
+objetos,travesseiro
+objetos,luminaria
+objetos,ventilador
+objetos,abajur
+objetos,quadro
+objetos,escultura
+objetos,almofada
+objetos,edredom
+objetos,vaso
+objetos,escultura
+objetos,almofada
+objetos,edredom
+objetos,vaso
+objetos,radio
+objetos,fone de ouvido
+objetos,microfone
+objetos,teclado
+objetos,mouse
+objetos,pen drive
+objetos,carregador
+objetos,tablet
+objetos,notebook
+objetos,impressora
+objetos,scanner
+objetos,liquidificador
+objetos,batedeira
+objetos,cafeteira
+objetos,ferro de passar
+objetos,aspirador de po
+objetos,panela
+objetos,frigideira
+objetos,forno
+objetos,microondas
+objetos,torradeira
+objetos,liquidificador
+objetos,batedeira
+objetos,cafeteira
+objetos,ferro de passar
+objetos,aspirador de po
+objetos,panela
+objetos,frigideira
+objetos,forno
+objetos,microondas
+objetos,torradeira
+objetos,bolsa
+objetos,mala
+objetos,guarda chuva
+objetos,cadeado
+objetos,escova de cabelo
+objetos,perfume
+objetos,maquina de barbear
+objetos,grampeador
+objetos,pasta
+objetos,papel
+objetos,agenda
+objetos,porta retrato
+objetos,cadeira de rodas
+objetos,berco
+objetos,carrinho de bebe
+objetos,balde
+objetos,vassoura
+objetos,escada
+objetos,carrinho de supermercado
+objetos,boneca
+objetos,cubo magico
+objetos,patins
+objetos,patinete
+parte do corpo humano,cabeça
+parte do corpo humano,olhos
+parte do corpo humano,nariz
+parte do corpo humano,boca
+parte do corpo humano,orelhas
+parte do corpo humano,pescoco
+parte do corpo humano,ombros
+parte do corpo humano,bracos
+parte do corpo humano,maos
+parte do corpo humano,dedos
+parte do corpo humano,peito
+parte do corpo humano,barriga
+parte do corpo humano,costas
+parte do corpo humano,quadril
+parte do corpo humano,pernas
+parte do corpo humano,joelhos
+parte do corpo humano,pes
+parte do corpo humano,dedos dos pes
+parte do corpo humano,unhas
+adverbios,rapidamente
+adverbios,lentamente
+adverbios,felizmente
+adverbios,tristemente
+adverbios,claramente
+adverbios,facilmente
+adverbios,lentamente
+adverbios,sinceramente
+adverbios,silenciosamente
+adverbios,cuidadosamente
+adverbios,alegremente
+adverbios,calmamente
+adverbios,repentinamente
+adverbios,frequentemente
+adverbios,raramente
+adverbios,bruscamente
+adverbios,graciosamente
+adverbios,suavemente
+adverbios,ansiosamente
+adverbios,energeticamente
+adverbios,agora
+adverbios,sempre
+adverbios,nunca
+adverbios,bem
+adverbios,depressa
+adverbios,devagar
+adverbios,muito
+adverbios,pouco
+adverbios,bastante
+adverbios,quase
+adverbios,longe
+adverbios,perto
+adverbios,antes
+adverbios,depois
+animais,elefante
+animais,girafa
+animais,leao
+animais,tigre
+animais,urso
+animais,lobo
+animais,hipopotamo
+animais,rinoceronte
+animais,gorila
+animais,orangotango
+animais,macaco
+animais,chimpanze
+animais,jacare
+animais,crocodilo
+animais,gavial
+animais,panda
+animais,cavalo
+animais,vaca
+animais,porco
+animais,ovelha
+animais,cabra
+animais,camelo
+animais,dromedario
+animais,lhama
+animais,alpaca
+animais,gato
+animais,cachorro
+animais,rato
+animais,esquilo
+animais,coelho
+animais,lebre
+animais,furao
+animais,raposa
+animais,urso_polar
+animais,lontra
+animais,leopardo
+animais,jaguar
+animais,ocelote
+animais,cheetah
+animais,guaxinim
+animais,morsa
+animais,foca
+animais,leao_marinho
+animais,baleia
+animais,golfinho
+animais,orca
+animais,tubarao
+animais,arraia
+animais,peixe_espada
+animais,espada
+animais,salmao
+animais,truta
+animais,tucunare
+animais,piranha
+animais,pirarucu
+animais,surubim
+animais,tilapia
+animais,pintado
+animais,pescada
+animais,preguica
+animais,formiga
+animais,abelha
+animais,vespa
+animais,mosquito
+animais,borboleta
+animais,libelula
+animais,grilo
+animais,gafanhoto
+animais,abelhao
+animais,cupim
+animais,aranha
+animais,escorpiao
+animais,camundongo
+animais,quati
+animais,arara
+animais,papagaio
+animais,tucano
+animais,sabiá
+animais,gralha
+animais,coruja
+animais,aguia
+animais,falcao
+animais,pelicano
+animais,pavao
+animais,avestruz
+animais,ema
+animais,cisne
+animais,pato
+animais,ganso
+animais,peru
+animais,galinha
+animais,galo
+animais,pavao
+animais,avestruz
+animais,ema
+animais,cisne
+animais,pato
+animais,ganso
+animais,peru
+animais,galinha
+animais,galo
+substantivo,computador
+substantivo,livro
+substantivo,oculos
+substantivo,relogio
+substantivo,caneta
+substantivo,cadeira
+substantivo,mesa
+substantivo,carro
+substantivo,bicicleta
+substantivo,camera
+substantivo,chave
+substantivo,bolsa
+substantivo,sapato
+substantivo,sofa
+substantivo,escova de dentes
+substantivo,copo
+substantivo,garfo
+substantivo,faca
+substantivo,colher
+substantivo,televisao
+substantivo,laptop
+substantivo,mochila
+substantivo,travesseiro
+substantivo,luminaria
+substantivo,ventilador
+substantivo,abajur
+substantivo,quadro
+substantivo,escultura
+substantivo,almofada
+substantivo,edredom
+substantivo,vaso
+substantivo,radio
+substantivo,fone de ouvido
+substantivo,microfone
+substantivo,teclado
+substantivo,mouse
+substantivo,pen drive
+substantivo,carregador
+substantivo,tablet
+substantivo,notebook
+substantivo,impressora
+substantivo,scanner
+substantivo,liquidificador
+substantivo,batedeira
+substantivo,cafeteira
+substantivo,ferro de passar
+substantivo,aspirador de pó
+substantivo,panela
+substantivo,frigideira
+substantivo,forno
+substantivo,microondas
+substantivo,torradeira
+substantivo,bolsa
+substantivo,mala
+substantivo,guarda-chuva
+substantivo,cadeado
+substantivo,escova de cabelo
+substantivo,perfume
+substantivo,maquina de barbear
+substantivo,grampeador
+substantivo,pasta
+substantivo,papel
+substantivo,agenda
+substantivo,porta-retrato
+substantivo,cadeira de rodas
+substantivo,berço
+substantivo,carrinho de bebê
+substantivo,balde
+substantivo,vassoura
+substantivo,escada
+substantivo,carrinho de supermercado
+substantivo,boneca
+substantivo,cubo mágico
+substantivo,patins
+substantivo,patinete
+substantivo,telescópio
+substantivo,violino
+substantivo,violincelo
+substantivo,cravo
+substantivo,violino
+substantivo,violincelo
+substantivo,flauta
+substantivo,piano
+substantivo,trumpete
+substantivo,trombone
+substantivo,saxofone
+substantivo,clarinete
+substantivo,violao
+substantivo,cavaquinho
+substantivo,ukulele
+substantivo,harpa
+substantivo,arpa
+substantivo,violoncelo
+substantivo,surdo
+substantivo,cuica
+substantivo,berimbau
+substantivo,pandeiro
+substantivo,tamborim
+substantivo,agogo
+substantivo,xilofone
+substantivo,marimba
+substantivo,acordeao
+substantivo,bandolim
+substantivo,citara
+substantivo,cravo
+substantivo,flauta transversal
+substantivo,flautim
+substantivo,tuba
+substantivo,guitarra eletrica
+substantivo,baixo elétrico
+substantivo,bateria
