@@ -327,7 +327,6 @@ namespace ProjetoFinalAdaTech.JogoDaForca
         {
             try
             {
-                Console.WriteLine(palavra);
                 return palavra == palavraUsuario;
             }
             catch (Exception ex)
