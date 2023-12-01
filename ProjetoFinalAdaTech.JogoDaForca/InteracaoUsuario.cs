@@ -11,10 +11,19 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 ApresentarMensagemSaudacao();
                 ApresentarCategoria(categoriaSorteada, palavraSorteada);
 
-                char[] palavraEscondida = InicializarPalavraEscondida(palavraSorteada);
+                char[] palavraEscondida = Manipulacao.InicializarPalavraEscondida(palavraSorteada);
 
                 bool vencedor = false;
                 int contadorErros = 0;
+
+                char[,] matrizLetras = new char[,]
+                {
+                    {'A', 'B', 'C', 'D', 'E', 'F' },
+                    {'G', 'H', 'I', 'J', 'K', 'L' },
+                    {'M', 'N', 'O', 'P', 'Q', 'R' },
+                    {'S', 'T', 'U', 'V', 'W', 'X' },
+                    {'Y', 'Z', '_', '_', '_', '_' },
+                };
 
                 while (!vencedor)
                 {
@@ -22,22 +31,24 @@ namespace ProjetoFinalAdaTech.JogoDaForca
 
                     bool entradaUsuario = LerEntradaDoUsuario(palavraEscondida);
 
-                    Console.WriteLine($"\n\nQuantidade de vidas: {6 - contadorErros}\n");
+                    Console.WriteLine($"\n\nQuantidade de vidas: {6 - contadorErros}\nCategoria: {categoriaSorteada}");
 
                     if (entradaUsuario) // Se a entrada é uma letra
                     {
                         char letra = LerLetraDoUsuario();
 
-                        if (PalavraSorteadaContemLetra(palavraSorteada, letra) && !PalavraEscondidaContemLetra(palavraEscondida, letra))
+                        Manipulacao.ImprimirMatrizLetras(AtualizarMatrizLetras(letra, matrizLetras));
+
+                        if (Verificacao.PalavraSorteadaContemLetra(palavraSorteada, letra) && !Verificacao.PalavraEscondidaContemLetra(palavraEscondida, letra))
                         {
                             Console.WriteLine("\nLetra correta!");
-                            AtualizarPalavraEscondida(palavraSorteada, letra, palavraEscondida);
-                            vencedor = VerificarVencedor(palavraEscondida);
+                            Manipulacao.AtualizarPalavraEscondida(palavraSorteada, letra, palavraEscondida);
+                            vencedor = Verificacao.VerificarVencedor(palavraEscondida);
                         }
                         else
                         {
                             contadorErros++;
-                            if (!VerificarErros(contadorErros, palavraSorteada))
+                            if (!Verificacao.VerificarErros(contadorErros, palavraSorteada))
                             {
                                 break;
                             }
@@ -48,7 +59,7 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                     {
                         Console.WriteLine("Digite a palavra completa:");
                         string palavraUsuario = Console.ReadLine();
-                        vencedor = VerificarPalavra(palavraSorteada, palavraUsuario);
+                        vencedor = Verificacao.VerificarPalavra(palavraSorteada, palavraUsuario);
                         if (vencedor)
                         {
                             Console.WriteLine("\nParabéns! Você acertou a palavra completa. Você é o vencedor!");
@@ -109,29 +120,12 @@ namespace ProjetoFinalAdaTech.JogoDaForca
         {
             try
             {
-                Console.WriteLine($"A categoria é: {categoria}\nA palavra sorteada possui: {palavraSorteada.Length} letras.");
+                Console.WriteLine($"A categoria é: {categoria}\nA palavra sorteada possui: {palavraSorteada.Length} letras.\n\n");
                 Aguardar(1000);
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Ocorreu uma exceção ao apresentar a categoria: {ex.Message}");
-                throw;
-            }
-        }
-        #endregion
-
-        #region Método para inicializar a palavra
-
-        private static char[] InicializarPalavraEscondida(string palavraSorteada)
-        {
-            try
-            {
-                char[] palavraEscondida = new char[palavraSorteada.Length];
-                return AlterarArray(palavraEscondida, palavraSorteada);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ocorreu uma exceção ao inicializar a palavra escondida: {ex.Message}");
                 throw;
             }
         }
@@ -152,32 +146,13 @@ namespace ProjetoFinalAdaTech.JogoDaForca
         }
         #endregion
 
-        #region Método para alterar array
-
-        private static char[] AlterarArray(char[] palavra, string palavraSorteada)
-        {
-            try
-            {
-                for (int i = 0; i < palavra.Length; i++)
-                {
-                    palavra[i] = (palavraSorteada[i] != ' ') ? '_' : ' ';
-                }
-                return palavra;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ocorreu uma exceção ao alterar o array: {ex.Message}");
-                throw;
-            }
-        }
-        #endregion
-
         #region Método para ler entrada char
         private static char LerLetraDoUsuario()
         {
             try
             {
-                return Console.ReadKey().KeyChar;
+                Console.WriteLine("\n\nDigite uma letra:\n");
+                return char.ToLower(Console.ReadKey().KeyChar);
             }
             catch (Exception ex)
             {
@@ -193,7 +168,7 @@ namespace ProjetoFinalAdaTech.JogoDaForca
         {
             try
             {
-                return Console.ReadLine();
+                return Console.ReadLine().ToLower();
             }
             catch (Exception ex)
             {
@@ -203,138 +178,38 @@ namespace ProjetoFinalAdaTech.JogoDaForca
         }
         #endregion
 
-        #region Método verificar a letra na palavra
-        private static bool PalavraSorteadaContemLetra(string palavraSorteada, char letra)
+        #region Método para atualizar a matriz de letras digitadas
+        private static char [,] AtualizarMatrizLetras(char letra, char[,] matrizLetras)
         {
-            try
+            for (int linha = 0; linha < matrizLetras.GetLength(0); linha++)
             {
-                return palavraSorteada.Contains(letra);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ocorreu uma exceção ao verificar se a palavra sorteada contém a letra: {ex.Message}");
-                throw;
-            }
-        }
-        #endregion
-
-        #region Método para verificar se a palavra base já contém a letra
-        private static bool PalavraEscondidaContemLetra(char[] palavra, char letra)
-        {
-            try
-            {
-                return palavra.Contains(letra);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ocorreu uma exceção ao verificar se a palavra escondida contém a letra: {ex.Message}");
-                throw;
-            }
-        }
-        #endregion
-
-        #region Método para atualizar palavra escondida
-        private static void AtualizarPalavraEscondida(string palavraSorteada, char letra, char[] palavra)
-        {
-            try
-            {
-                List<int> posicoes = PosicoesLetra(palavraSorteada, letra);
-                SubstituirLetra(posicoes, letra, palavra);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ocorreu uma exceção ao atualizar a palavra escondida: {ex.Message}");
-                throw;
-            }
-        }
-        #endregion
-
-        #region Método para verificar a posição da letra
-        private static List<int> PosicoesLetra(string palavraSorteada, char letra)
-        {
-            try
-            {
-                return palavraSorteada
-                    .Select((c, i) => c == letra ? i : -1)
-                    .Where(i => i != -1)
-                    .ToList();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ocorreu uma exceção ao obter as posições da letra na palavra sorteada: {ex.Message}");
-                throw;
-            }
-        }
-        #endregion
-
-        #region Método para substituir a letra na posição correta
-
-        private static void SubstituirLetra(List<int> posicoes, char letra, char[] palavra)
-        {
-            try
-            {
-                posicoes.ForEach(i => palavra[i] = letra);
-                Console.WriteLine($"{string.Join("", palavra)}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ocorreu uma exceção ao substituir a letra na palavra: {ex.Message}");
-                throw;
-            }
-        }
-        #endregion
-
-        #region Método para verificar erros
-
-        private static bool VerificarErros(int contadorErros, string palavraSorteada)
-        {
-            try
-            {
-                bool verificador = true;
-                if (contadorErros == 6)
+                for (int coluna = 0; coluna < matrizLetras.GetLength(1); coluna++)
                 {
-                    Console.WriteLine($"Você perdeu! A palavra correta é: {palavraSorteada}");
-                    verificador = false;
+                    if (matrizLetras[linha, coluna] == char.ToUpper(letra))
+                    {
+                        matrizLetras[linha, coluna] = '_';
+                    }
                 }
-                return verificador;
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ocorreu uma exceção ao verificar os erros: {ex.Message}");
-                throw;
-            }
+            return matrizLetras;
         }
         #endregion
 
-        #region Método para verificar vencedor
-
-        private static bool VerificarVencedor(char[] palavra)
+        #region Imprimir Matriz alterada
+        private static void ImprimirMatrizLetras(char[,] matrizLetras)
         {
-            try
-            {
-                return !palavra.Contains('_');
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ocorreu uma exceção ao verificar o vencedor: {ex.Message}");
-                throw;
-            }
-        }
-        #endregion
+            Console.WriteLine("Acompanhe abaixo as letras possíveis para uso:\n\n");
 
-        #region Método para checar se a palavra inserida é a correta
-        private static bool VerificarPalavra(string palavra, string palavraUsuario)
-        {
-            try
+            for (int linha = 0; linha < matrizLetras.GetLength(0); linha++)
             {
-                return palavra == palavraUsuario;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ocorreu uma exceção ao verificar a palavra completa: {ex.Message}");
-                throw;
+                for (int coluna = 0; coluna < matrizLetras.GetLength(1); coluna++)
+                {
+                    Console.Write(matrizLetras[linha, coluna] + " ");
+                }
+                Console.WriteLine();
             }
         } 
         #endregion
+
     }
 }
