@@ -1,4 +1,10 @@
-﻿namespace ProjetoFinalAdaTech.JogoDaForca
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading;
+
+namespace ProjetoFinalAdaTech.JogoDaForca
 {
     internal class ColetarDados
     {
@@ -6,55 +12,102 @@
         {
             string caminhoArquivo = "C:\\Users\\tauan\\Desktop\\Tauany\\DiverseDEV\\Aulas - ME\\ProjetoFinalAdaTech\\ProjetoFinalAdaTech.JogoDaForca\\jogodaforca.txt";
 
-            Dictionary<string, List<string>> categoriasPalavras = LerArquivo(caminhoArquivo);
+            try
+            {
+                Dictionary<string, List<string>> categoriasPalavras = LerArquivo(caminhoArquivo);
 
-            string categoriaSorteada = SortearCategoria(categoriasPalavras);
-            string palavraSorteada = SortearPalavra(categoriasPalavras, categoriaSorteada);
+                string categoriaSorteada = SortearCategoria(categoriasPalavras);
+                string palavraSorteada = SortearPalavra(categoriasPalavras, categoriaSorteada);
 
-            InteracaoUsuario.MetodoPrincipal(categoriaSorteada, palavraSorteada);
+                InteracaoUsuario.MetodoPrincipal(categoriaSorteada, palavraSorteada);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ocorreu uma exceção: {ex.Message}");
+                // Aqui você pode adicionar mais tratamento ou log, se necessário.
+            }
         }
 
         private static Dictionary<string, List<string>> LerArquivo(string caminhoArquivo)
         {
-            string[] linhas = File.ReadAllLines(caminhoArquivo);
-            Dictionary<string, List<string>> categoriasPalavras = new Dictionary<string, List<string>>();
-
-            foreach (string linha in linhas)
+            try
             {
-                AdicionarLinhaAoDicionario(categoriasPalavras, linha);
-            }
+                string[] linhas = File.ReadAllLines(caminhoArquivo);
+                Dictionary<string, List<string>> categoriasPalavras = new Dictionary<string, List<string>>();
 
-            return categoriasPalavras;
+                foreach (string linha in linhas)
+                {
+                    AdicionarLinhaAoDicionario(categoriasPalavras, linha);
+                }
+
+                return categoriasPalavras;
+            }
+            catch (IOException ex)
+            {
+                // Trate a exceção de leitura do arquivo
+                Console.WriteLine($"Erro na leitura do arquivo: {ex.Message}");
+                throw;
+            }
+            catch (Exception ex)
+            {
+                // Trate outras exceções inesperadas
+                Console.WriteLine($"Ocorreu uma exceção ao processar o arquivo: {ex.Message}");
+                throw;
+            }
         }
 
         private static void AdicionarLinhaAoDicionario(Dictionary<string, List<string>> categoriasPalavras, string linha)
         {
-            string[] partes = linha.Split(',');
-            string categoria = partes[0].Trim();
-            string palavra = partes[1].Trim();
+            try
+            {
+                string[] partes = linha.Split(',');
+                string categoria = partes[0].Trim();
+                string palavra = partes[1].Trim();
 
-            if (categoriasPalavras.ContainsKey(categoria))
-            {
-                categoriasPalavras[categoria].Add(palavra);
+                if (categoriasPalavras.ContainsKey(categoria))
+                {
+                    categoriasPalavras[categoria].Add(palavra);
+                }
+                else
+                {
+                    categoriasPalavras.Add(categoria, new List<string> { palavra });
+                }
             }
-            else
+            catch (Exception ex)
             {
-                categoriasPalavras.Add(categoria, new List<string> { palavra });
+                Console.WriteLine($"Ocorreu uma exceção ao processar uma linha do arquivo: {ex.Message}");
+                throw;
             }
         }
 
         private static string SortearCategoria(Dictionary<string, List<string>> categoriasPalavras)
         {
-            Random random = new Random();
-            List<string> categorias = new List<string>(categoriasPalavras.Keys);
-            return categorias[random.Next(categorias.Count)];
+            try
+            {
+                Random random = new Random();
+                List<string> categorias = new List<string>(categoriasPalavras.Keys);
+                return categorias[random.Next(categorias.Count)];
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ocorreu uma exceção ao sortear a categoria: {ex.Message}");
+                throw;
+            }
         }
 
         private static string SortearPalavra(Dictionary<string, List<string>> categoriasPalavras, string categoria)
         {
-            Random random = new Random();
-            List<string> palavrasNaCategoria = categoriasPalavras[categoria];
-            return palavrasNaCategoria[random.Next(palavrasNaCategoria.Count)];
+            try
+            {
+                Random random = new Random();
+                List<string> palavrasNaCategoria = categoriasPalavras[categoria];
+                return palavrasNaCategoria[random.Next(palavrasNaCategoria.Count)];
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ocorreu uma exceção ao sortear a palavra: {ex.Message}");
+                throw;
+            }
         }
     }
 }
