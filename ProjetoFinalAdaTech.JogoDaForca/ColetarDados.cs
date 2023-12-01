@@ -3,6 +3,7 @@ namespace ProjetoFinalAdaTech.JogoDaForca
 {
     internal class ColetarDados
     {
+        #region Método Principal
         internal static void MetodoPrincipal()
         {
             string caminhoArquivo = "C:\\Users\\tauan\\Desktop\\Tauany\\DiverseDEV\\Aulas - ME\\ProjetoFinalAdaTech\\ProjetoFinalAdaTech.JogoDaForca\\jogodaforca.txt";
@@ -22,7 +23,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 // Aqui você pode adicionar mais tratamento ou log, se necessário.
             }
         }
+        #endregion
 
+        #region Método para ler o Arquivo de Texto - Banco de Palavras
         private static Dictionary<string, List<string>> LerArquivo(string caminhoArquivo)
         {
             try
@@ -50,6 +53,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
+
+        #region Método para adicionar arquivo ao dicionário
 
         private static void AdicionarLinhaAoDicionario(Dictionary<string, List<string>> categoriasPalavras, string linha)
         {
@@ -74,7 +80,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
 
+        #region Método para sortear categoria
         private static string SortearCategoria(Dictionary<string, List<string>> categoriasPalavras)
         {
             try
@@ -89,7 +97,9 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 throw;
             }
         }
+        #endregion
 
+        #region Método para sortear palavra
         private static string SortearPalavra(Dictionary<string, List<string>> categoriasPalavras, string categoria)
         {
             try
@@ -103,6 +113,7 @@ namespace ProjetoFinalAdaTech.JogoDaForca
                 Console.WriteLine($"Ocorreu uma exceção ao sortear a palavra: {ex.Message}");
                 throw;
             }
-        }
+        } 
+        #endregion
     }
 }
